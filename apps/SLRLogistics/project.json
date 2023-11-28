@@ -1,0 +1,89 @@
+{
+  "name": "SLRLogistics",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "generators": {},
+  "sourceRoot": "apps/SLRLogistics/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "options": {
+        "outputPath": "dist/apps/SLRLogistics",
+        "index": "apps/SLRLogistics/src/index.html",
+        "main": "apps/SLRLogistics/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/SLRLogistics/tsconfig.app.json",
+        "assets": [
+          "apps/SLRLogistics/src/favicon.ico",
+          "apps/SLRLogistics/src/assets"
+        ],
+        "styles": [
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "apps/SLRLogistics/src/styles.css"
+        ],
+        "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "proxyConfig": "apps/SLRLogistics/proxy.conf.json"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "SLRLogistics:build:production"
+        },
+        "development": {
+          "buildTarget": "SLRLogistics:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "SLRLogistics:build"
+      }
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "polyfills": ["zone.js", "zone.js/testing"],
+        "tsConfig": "apps/SLRLogistics/tsconfig.spec.json",
+        "assets": [
+          "apps/SLRLogistics/src/favicon.ico",
+          "apps/SLRLogistics/src/assets"
+        ],
+        "styles": ["apps/SLRLogistics/src/styles.css"],
+        "scripts": []
+      }
+    }
+  }
+}

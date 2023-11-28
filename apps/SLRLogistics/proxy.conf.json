@@ -1,0 +1,14 @@
+{
+  "/api": {
+    "target": "http://localhost:3000",
+    "secure": false
+  },
+  "/user/is-exist": {
+    "target": "http://localhost:3000",
+    "secure": false
+  },
+  "/user/signup": {
+    "target": "http://localhost:3000",
+    "secure": false
+  }
+}

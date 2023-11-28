@@ -1,0 +1,57 @@
+
+.fdx-o-grid {
+    font-family: FedExSans,sans-serif!important;
+    box-sizing: border-box;
+}
+.fdx-o-grid__row--guttered-small {
+    margin-right: -0.0625rem;
+    margin-left: -0.0625rem;
+}
+.fdx-o-grid__row--center {
+    justify-content: center;
+}
+.fdx-o-grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fdx-u-mb--8 {
+    margin-bottom: 2.5rem!important;
+}
+.fdx-u-font-size--h3 {
+    font-size: 2.1875rem!important;
+}
+
+h1 {
+    font-style: normal;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.fdx-o-grid__item--12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.fdx-o-grid__item {   
+    padding-right: 0.0625rem;
+    padding-left: 0.0625rem;
+}
+
+.fdx-c-form-group--float-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.fdx-c-form-group__item {
+    background: #f2f2f2;
+}
+
+.fdx-c-form-group__message--has-message {
+    padding: 0.625rem 0.9375rem;
+}
+.fdx-u-font-size--super-small {
+    font-size: .625rem!important;
+}

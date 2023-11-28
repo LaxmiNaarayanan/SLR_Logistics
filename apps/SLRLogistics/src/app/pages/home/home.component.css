@@ -1,0 +1,71 @@
+.image-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/assets/images/BackgroundImage.jpg');
+  padding: 64px 24px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.main-hero__heading {
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 56px;
+  margin-bottom: 1rem;
+  color: #fbfbfb;
+}
+
+.main-hero__sub-heading {
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: #fbfbfb;
+
+  padding-bottom: 1rem;
+}
+
+.main-hero__action-button {
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.overview-section {
+  color: #141414;
+
+  padding: 3rem 1rem;
+}
+
+.section-title {
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.section-description {
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.contact-us-section {
+  padding: 0 3rem 1rem 1rem;
+}
+
+.card-content {
+  padding-bottom: 1rem;
+  min-height: 10rem;
+}
+
+.card-input {
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}

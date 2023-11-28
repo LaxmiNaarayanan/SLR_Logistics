@@ -1,0 +1,17 @@
+.main-hero__action-button {
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.overview-section {
+  margin: 3rem 0rem;
+}
+.tracker-div {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 0.3rem;
+}
+.tracker-input {
+  height: 100%;
+  margin-top: 0.2rem;
+}
